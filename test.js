@@ -5,10 +5,8 @@ async function matrixProduct(matrix1, matrix2) {
       "As dimensões das matrizes são incompatíveis para a multiplicação."
     );
   }
-
   // Cria uma matriz vazia para armazenar o resultado
   const result = [];
-
   // Inicializa a matriz de resultado com zeros
   for (let i = 0; i < matrix1.length; i++) {
     result[i] = [];
@@ -16,7 +14,6 @@ async function matrixProduct(matrix1, matrix2) {
       result[i][j] = 0;
     }
   }
-
   // Calcula o produto entre as matrizes
   for (let i = 0; i < matrix1.length; i++) {
     for (let j = 0; j < matrix2[0].length; j++) {
@@ -25,11 +22,9 @@ async function matrixProduct(matrix1, matrix2) {
       }
     }
   }
-
   // Retorna a matriz de resultado
   return result;
 }
-
 // Exemplo de uso
 const matrix1 = [
   [1, 2, 3],

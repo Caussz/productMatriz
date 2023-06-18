@@ -1,4 +1,4 @@
-function matrixProduct(matrix1, matrix2) {
+async function matrixProduct(matrix1, matrix2) {
   // Verifica se as matrizes têm dimensões adequadas para o produto
   if (matrix1[0].length !== matrix2.length) {
     throw new Error(
@@ -43,3 +43,5 @@ const matrix2 = [
 
 const product = matrixProduct(matrix1, matrix2);
 console.log(product);
+
+module.exports = { matrixProduct };
